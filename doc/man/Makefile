@@ -32,20 +32,20 @@ clean:
 	rm -f aboot.8 aboot.conf.5 abootconf.8 isomarkboot.1 sdisklabel.8 netabootwrap.1 manpage.log manpage.links manpage.refs
 
 aboot.8: aboot.sgml
-	nsgmls aboot.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
+	onsgmls aboot.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
 
 aboot.conf.5: aboot.conf.sgml
-	nsgmls aboot.conf.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
+	onsgmls aboot.conf.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
 
 abootconf.8: abootconf.sgml
-	nsgmls abootconf.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
+	onsgmls abootconf.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
 
 isomarkboot.1: isomarkboot.sgml
-	nsgmls isomarkboot.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
+	onsgmls isomarkboot.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
 
 netabootwrap.1: netabootwrap.sgml
-	nsgmls netabootwrap.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
+	onsgmls netabootwrap.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
 
 sdisklabel.8: sdisklabel.sgml
-	nsgmls sdisklabel.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
+	onsgmls sdisklabel.sgml | sgmlspl sgmlspl-specs/docbook2man-spec.pl
 

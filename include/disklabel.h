@@ -1,6 +1,9 @@
 #ifndef __disklabel_h__
 #define __disklabel_h__
 
+#define HAVE__U64
+#define HAVE__BE64
+
 #include <linux/types.h>
 
 #define DISKLABELMAGIC (0x82564557UL)
